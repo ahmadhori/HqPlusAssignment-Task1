@@ -14,19 +14,15 @@ namespace HqPlusAssignment_Task1.Tests
         [TestCase("task 1 - Kempinski Hotel Bristol Berlin, Germany - Booking.com.html")]
         public void ParserShouldBeValidWithAValidDocumentUrl(string documentUrl)
         {
-            HotelParser HotelParser = new HotelParser();
-            HotelParser.fetchHtml(documentUrl);
+            HotelParser hotelParser = new HotelParser();
+            hotelParser.fetchHtml(documentUrl);
 
-            if (HotelParser.requestSucceeded)
+            if (hotelParser.RequestSucceeded)
             {
-                HotelParser.ExtractHotelData();
-                Assert.IsTrue(HotelParser.IsValid());
+                hotelParser.ExtractHotelData();
+                Assert.IsTrue(hotelParser.IsValid());
             }
         }
 
-        //public void Test1()
-        //{
-        //    Assert.Pass();
-        //}
     }
 }

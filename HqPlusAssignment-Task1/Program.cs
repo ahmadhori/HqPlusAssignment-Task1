@@ -11,15 +11,15 @@ namespace HqPlusAssignment_Task1
     {
         static void Main(string[] args)
         {
-            HotelParser HotelParser = new HotelParser();
-            
-            HotelParser.fetchHtml("task 1 - Kempinski Hotel Bristol Berlin, Germany - Booking.com.html");
-            
-            if (HotelParser.requestSucceeded) 
-            {
-                HotelParser.ExtractHotelData();
+            HotelParser hotelParser = new HotelParser();
 
-                string output = JsonConvert.SerializeObject(HotelParser.Hotel, Newtonsoft.Json.Formatting.None,
+            hotelParser.fetchHtml("task 1 - Kempinski Hotel Bristol Berlin, Germany - Booking.com.html");
+            
+            if (hotelParser.RequestSucceeded) 
+            {
+                hotelParser.ExtractHotelData();
+
+                string output = JsonConvert.SerializeObject(hotelParser.Hotel, Newtonsoft.Json.Formatting.None,
                                 new JsonSerializerSettings
                                 {
                                     NullValueHandling = NullValueHandling.Ignore
