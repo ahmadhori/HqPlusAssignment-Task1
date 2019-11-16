@@ -24,8 +24,21 @@ namespace HqPlusAssignment_Task1
                                 {
                                     NullValueHandling = NullValueHandling.Ignore
                                 });
-
                 System.IO.File.WriteAllText(@"Output.json", output);
+
+
+                if (hotelParser.IsValid())
+                {
+                    Console.WriteLine("Extracted Data Successfully to Output.json");
+                }
+                else
+                {
+                    Console.WriteLine("Failed to Extract Data with the following errors:");
+                    foreach (var item in hotelParser.Errors)
+                    {
+                        Console.WriteLine(item);
+                    }
+                }
             }
             else
             {

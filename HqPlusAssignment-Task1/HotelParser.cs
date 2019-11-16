@@ -1,5 +1,4 @@
-﻿
-using HtmlAgilityPack;
+﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -59,9 +58,6 @@ namespace HqPlusAssignment_Task1
             return IsValid();
         }
 
-
-
-
         public HotelParser ExtractName()
         {
             var hotelNameDiv = htmlDoc.GetElementbyId("hp_hotel_name");
@@ -76,7 +72,6 @@ namespace HqPlusAssignment_Task1
             }
             return this;
         }
-
 
         public HotelParser ExtractAddress()
         {
