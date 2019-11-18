@@ -28,7 +28,7 @@ namespace HqPlusAssignment_Task1
 
                 if (hotelParser.IsValid())
                 {
-                    Console.WriteLine("Extracted Data Successfully to Output.json");
+                    Console.WriteLine("Extracted Data Successfully to OutputJsonFile-Task1.json");
                 }
                 else
                 {
