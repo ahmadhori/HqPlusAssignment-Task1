@@ -24,8 +24,7 @@ namespace HqPlusAssignment_Task1
                                 {
                                     NullValueHandling = NullValueHandling.Ignore
                                 });
-                System.IO.File.WriteAllText(@"Output.json", output);
-
+                System.IO.File.WriteAllText(@"OutputJsonFile-Task1.json", output);
 
                 if (hotelParser.IsValid())
                 {

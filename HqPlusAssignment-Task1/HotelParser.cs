@@ -27,18 +27,18 @@ namespace HqPlusAssignment_Task1
             string text;
             try
             {
-                if (Url.StartsWith("https://") || Url.StartsWith("http://"))
-                {
-                    using (WebClient client = new WebClient())
-                    {
-                        text = client.DownloadString(Url);
-                    }
-                    Hotel.BookingPageUrl = Url;
-                }
-                else
-                {
+                //if (Url.StartsWith("https://") || Url.StartsWith("http://"))
+                //{
+                //    using (WebClient client = new WebClient())
+                //    {
+                //        text = client.DownloadString(Url);
+                //    }
+                //    Hotel.BookingPageUrl = Url;
+                //}
+                //else
+                //{
                     text = File.ReadAllText(Url);
-                }
+                //}
                 htmlDoc.LoadHtml(text);
                 RequestSucceeded = true;
             }
