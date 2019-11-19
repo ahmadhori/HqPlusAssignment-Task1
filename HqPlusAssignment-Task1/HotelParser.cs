@@ -51,6 +51,7 @@ namespace HqPlusAssignment_Task1
 
         public bool ExtractHotelData()
         {
+            Errors.Clear();
             this.ExtractName().ExtractAddress().ExtractClassification()
                     .ExtractReviewPoints().ExtractNumberOfReviews().ExtractDescription()
                     .ExtractRoomCategories().ExtractAlternativeHotels();

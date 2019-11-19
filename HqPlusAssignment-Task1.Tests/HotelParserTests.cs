@@ -129,6 +129,7 @@ namespace HqPlusAssignment_Task1.Tests
             }
         }
 
+        // TODO
         //Should_FailTo_ExtractData_When_Document_Is_Invalid
         //Should_FailTo_ExtractName_When_Document_Is_Invalid
         //Should_FailTo_ExtractAddress_When_Document_Is_Invalid
@@ -138,6 +139,5 @@ namespace HqPlusAssignment_Task1.Tests
         //Should_FailTo_ExtractDescription_When_Document_Is_Invalid
         //Should_FailTo_ExtractRoomCategories_When_Document_Is_Invalid
         //Should_FailTo_ExtractAlternativeHotels_When_Document_Is_Invalid
-
     }
 }
